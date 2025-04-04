@@ -27,3 +27,12 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Install dependencies
+```sh
+npm install express cors body-parser sqlite3 bcrypt nodemailer crypto passport express-session passport-google-oauth20
+```
+## Start server
+```sh
+node server.js
+```

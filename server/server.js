@@ -64,7 +64,7 @@ app.use(bodyParser.json());
 // 1. Налаштовуємо session (для Passport)
 app.use(
   session({
-    secret: "39d4ae8bb60c18c6ea16b6eb0fe3a05e6dcae301de3286e0136c9f6d27da1f1f", // ЗАМІНІТЬ на свій секрет
+    secret: "", // ЗАМІНІТЬ на свій секрет
     resave: false,
     saveUninitialized: false,
   })
@@ -78,8 +78,8 @@ app.use(passport.session());
 passport.use(
   new GoogleStrategy(
     {
-      clientID: "6751839906-pikjvr814g2ntdeab4jcgt31le4kfmit.apps.googleusercontent.com", // ЗАМІНІТЬ на свої дані
-      clientSecret: "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", // ЗАМІНІТЬ на свої дані
+      clientID: "", // ЗАМІНІТЬ на свої дані
+      clientSecret: "", // ЗАМІНІТЬ на свої дані
       callbackURL: "http://localhost:3000/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
